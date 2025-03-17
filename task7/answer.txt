@@ -1,0 +1,14 @@
+Результат:
+
+fopen("output/result_1.txt", "w")                = 0x55ff551ac2a0
+calloc(1000, 4)                                  = 0x55ff551ac480
+realloc(0x55ff551ac480, 2000)                    = 0x55ff551ac480
+fwrite("Memory successfully reallocated "..., 1, 47, 0x55ff551ac2a0) = 47
+free(0x55ff551ac480)                             = <void>
++++ exited (status 0) +++
+fopen("output/result_2.txt", "w")                = 0x55abba1d32a0
+calloc(1000, 4)                                  = 0x55abba1d3480
+reallocarray(0x55abba1d3480, 500, 4, 0)          = 0x55abba1d3480
+fwrite("Memory successfully reallocated "..., 1, 52, 0x55abba1d32a0) = 52
+free(0x55abba1d3480)                             = <void>
++++ exited (status 0) +++

@@ -1,0 +1,13 @@
+FROM debian:latest
+
+RUN apt update && apt install -y build-essential
+
+WORKDIR /app
+
+COPY task1.c /app/task1.c
+
+RUN mkdir -p output  
+
+RUN gcc -o task1 task1.c
+
+ENTRYPOINT ["./task1"]

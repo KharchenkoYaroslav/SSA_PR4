@@ -1,0 +1,13 @@
+FROM debian:latest
+
+RUN apt update && apt install -y build-essential ltrace
+
+WORKDIR /app
+
+COPY task8.c /app/task8.c
+
+RUN mkdir -p output  
+
+RUN gcc -o task8 task8.c
+
+ENTRYPOINT ["ltrace", "./task8"]

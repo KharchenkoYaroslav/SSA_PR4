@@ -1,0 +1,2 @@
+realloc(NULL, 16) успішний, отримано адресу: 0x56411fbbe480
+realloc(ptr, 0) повернув NULL 

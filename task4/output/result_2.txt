@@ -1,0 +1,10 @@
+Memory allocated at iteration 0
+Using ptr at iteration 0
+Memory allocated at iteration 1
+Using ptr at iteration 1
+Memory allocated at iteration 2
+Using ptr at iteration 2
+Memory allocated at iteration 3
+Using ptr at iteration 3
+Memory allocated at iteration 4
+Using ptr at iteration 4

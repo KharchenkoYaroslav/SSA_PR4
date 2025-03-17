@@ -1,0 +1,3 @@
+Size of size_t: 8 bytes (64 bits)
+Trying to allocate 18446744073709551615 bytes...
+Memory allocation failed.

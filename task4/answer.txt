@@ -1,0 +1,34 @@
+Результат:
+
+fopen("output/result_1.txt", "w")                = 0x55698009f2a0
+malloc(10)                                       = 0x55698009f480
+fprintf(0x55698009f2a0, "Memory allocated at iteration %d"..., 0) = 32
+fprintf(0x55698009f2a0, "Using ptr at iteration %d\n", 0) = 25
+free(0x55698009f480)                             = <void>
+fprintf(0x55698009f2a0, "Using ptr at iteration %d\n", 1) = 25
+free(0x55698009f480free(): double free detected in tcache 2
+ <no return ...>
+--- SIGABRT (Aborted) ---
++++ killed by SIGABRT +++
+fopen("output/result_2.txt", "w")                = 0x55ad5f3b62a0
+malloc(10)                                       = 0x55ad5f3b6480
+fprintf(0x55ad5f3b62a0, "Memory allocated at iteration %d"..., 0) = 32
+fprintf(0x55ad5f3b62a0, "Using ptr at iteration %d\n", 0) = 25
+free(0x55ad5f3b6480)                             = <void>
+malloc(10)                                       = 0x55ad5f3b6480
+fprintf(0x55ad5f3b62a0, "Memory allocated at iteration %d"..., 1) = 32
+fprintf(0x55ad5f3b62a0, "Using ptr at iteration %d\n", 1) = 25
+free(0x55ad5f3b6480)                             = <void>
+malloc(10)                                       = 0x55ad5f3b6480
+fprintf(0x55ad5f3b62a0, "Memory allocated at iteration %d"..., 2) = 32
+fprintf(0x55ad5f3b62a0, "Using ptr at iteration %d\n", 2) = 25
+free(0x55ad5f3b6480)                             = <void>
+malloc(10)                                       = 0x55ad5f3b6480
+fprintf(0x55ad5f3b62a0, "Memory allocated at iteration %d"..., 3) = 32
+fprintf(0x55ad5f3b62a0, "Using ptr at iteration %d\n", 3) = 25
+free(0x55ad5f3b6480)                             = <void>
+malloc(10)                                       = 0x55ad5f3b6480
+fprintf(0x55ad5f3b62a0, "Memory allocated at iteration %d"..., 4) = 32
+fprintf(0x55ad5f3b62a0, "Using ptr at iteration %d\n", 4) = 25
+free(0x55ad5f3b6480)                             = <void>
++++ exited (status 0) +++

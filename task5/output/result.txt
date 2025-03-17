@@ -1,0 +1,2 @@
+Memory allocated
+Memory reallocation failed, but original pointer is lost!

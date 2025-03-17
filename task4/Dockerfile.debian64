@@ -1,0 +1,17 @@
+FROM debian:latest
+
+RUN apt update && apt install -y build-essential ltrace
+
+WORKDIR /app
+
+COPY entrypoint.sh /app/entrypoint.sh
+
+COPY task4_1.c /app/task4_1.c
+COPY task4_2.c /app/task4_2.c
+
+RUN mkdir -p output  
+
+RUN gcc -o task4_1 task4_1.c
+RUN gcc -o task4_2 task4_2.c
+
+ENTRYPOINT ["/app/entrypoint.sh"]

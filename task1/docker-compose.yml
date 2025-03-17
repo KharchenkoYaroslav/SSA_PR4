@@ -1,0 +1,16 @@
+services:
+  debian64:
+    build:
+      context: .
+      dockerfile: Dockerfile.debian64
+    container_name: debian64_container
+    volumes:
+      - ./output:/app/output
+
+  debian32:
+    build:
+      context: .
+      dockerfile: Dockerfile.debian32
+    container_name: debian32_container
+    volumes:
+      - ./output:/app/output

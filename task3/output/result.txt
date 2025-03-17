@@ -1,0 +1,2 @@
+Testing malloc(0)
+malloc(0) returned non-NULL pointer, freeing it.

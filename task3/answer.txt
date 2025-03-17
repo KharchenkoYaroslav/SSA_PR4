@@ -1,0 +1,9 @@
+Результат:
+
+fopen("output/result.txt", "w")                  = 0x5575f71db2a0
+fwrite("Testing malloc(0)\n", 1, 18, 0x5575f71db2a0) = 18
+malloc(0)                                        = 0x5575f71dc490
+fwrite("malloc(0) returned non-NULL poin"..., 1, 49, 0x5575f71db2a0) = 49
+free(0x5575f71dc490)                             = <void>
+fclose(0x5575f71db2a0)                           = 0
++++ exited (status 0) +++
